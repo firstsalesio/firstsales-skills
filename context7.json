@@ -3,7 +3,7 @@
   "projectTitle": "FirstSales Agent Skills",
   "description": "Agent skills for FirstSales, an outbound sales platform. They drive the FirstSales CLI (@firstsales.io/cli) to manage campaigns, contacts, lists, companies, the reply inbox, Signals leads, senders, domains, deals, billing and API keys.",
   "folders": ["skills"],
-  "excludeFolders": ["tests", "scripts", ".github", ".claude-plugin"],
+  "excludeFolders": ["tests", "scripts", ".claude-plugin"],
   "rules": [
     "Run skills/firstsales/scripts/ensure-cli.sh before using the CLI, and install updates only after the user agrees.",
     "Show the --dry-run output of every write and run it only after the user confirms.",
