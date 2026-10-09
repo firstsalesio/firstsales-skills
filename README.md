@@ -104,7 +104,7 @@ The skills cover every command in the FirstSales CLI. Each area has its own refe
 | Billing | Plan, credits, usage | [billing-usage.md](skills/firstsales/references/billing-usage.md) |
 | Team | Members, invitations, groups, API keys | [team-access-keys.md](skills/firstsales/references/team-access-keys.md) |
 | Updates | Changelog and dashboard | [changelog-dashboard.md](skills/firstsales/references/changelog-dashboard.md) |
-| Raw access | Read-only v1 API routes, and the read-only MCP server | [api-and-mcp.md](skills/firstsales/references/api-and-mcp.md) |
+| Raw access | Any v1 API route, and the read-only MCP server | [api-and-mcp.md](skills/firstsales/references/api-and-mcp.md) |
 
 Multi-step recipes (weekly review, new campaign from a file, daily inbox pass, LinkedIn leads) live in [playbooks.md](skills/firstsales/playbooks.md). Errors and exit codes are in [troubleshooting.md](skills/firstsales/references/troubleshooting.md).
 
@@ -125,7 +125,7 @@ you ──ask──▶ agent ──loads──▶ firstsales skill ──runs─
 ```
 
 - **Engine:** the `firstsales` CLI, version 0.1.12 or newer.
-- **Fallback:** `firstsales api GET <path>` reaches read-only v1 routes the CLI has no command for. Raw API writes are not allowed because they have no dry run.
+- **Fallback:** `firstsales api <METHOD> <path>` reaches v1 routes the CLI has no command for, with `--dry-run` before writes.
 - **MCP:** the FirstSales MCP server is read-only; use the CLI for changes.
 
 ## Requirements

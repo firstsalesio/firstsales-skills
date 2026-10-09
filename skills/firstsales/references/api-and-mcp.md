@@ -6,10 +6,12 @@
 
 ```bash
 firstsales api GET /api/v1/organizations/org_123/workspaces --json
+firstsales api POST /api/v1/organizations/org_123/workspaces/ws_123/campaigns --data '{"name":"Q4 founders","campaignType":"outreach","goal":"meeting"}' --dry-run --json
 ```
 
 - Base URL: `https://api.app.firstsales.io`. Override with `--base-url` or `FIRSTSALES_BASE_URL` only for a test server the user names.
-- Use `api` only for reads. It has no dry-run, so agents must not use it for writes, even with confirmation. If no named command supports the write with dry-run, ask the user to perform it in the app.
+- For writes, run the same method, path and body with `--dry-run`, show the preview and get a yes before removing that flag. Prefer named commands for their additional validation.
+- Add `--idempotency-key <unique>` to retriable writes and keep it for retries of the same body.
 - Prefer a named command. Run `firstsales commands --json` to list them all.
 
 ## MCP

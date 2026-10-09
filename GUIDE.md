@@ -98,7 +98,7 @@ Every command in the CLI is documented, and a test fails if a new CLI command ha
 | [billing-usage.md](skills/firstsales/references/billing-usage.md) | Plan, credits, usage, top-ups |
 | [team-access-keys.md](skills/firstsales/references/team-access-keys.md) | Members, invitations, groups, API keys |
 | [changelog-dashboard.md](skills/firstsales/references/changelog-dashboard.md) | Changelog and dashboard |
-| [api-and-mcp.md](skills/firstsales/references/api-and-mcp.md) | Read-only v1 routes with `firstsales api`, and the read-only MCP server |
+| [api-and-mcp.md](skills/firstsales/references/api-and-mcp.md) | Any v1 route with `firstsales api`, and the read-only MCP server |
 | [troubleshooting.md](skills/firstsales/references/troubleshooting.md) | Exit codes and common problems |
 
 ## 6. Recipes

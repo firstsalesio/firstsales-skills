@@ -65,4 +65,4 @@ Report each sender as healthy, warming up or broken, with the fix for each broke
 
 1. Look up the route in the API reference at https://developer.firstsales.io.
 2. Reads: `firstsales api GET <path> --json` (api-and-mcp.md).
-3. Writes: use a named command with `--dry-run`, then ask for confirmation. If none exists, stop and ask the user to perform the action in the app; `api` has no dry run.
+3. Writes: `firstsales api POST <path> --data-file body.json --dry-run`. Show the preview and get a yes before running the same command without `--dry-run`.

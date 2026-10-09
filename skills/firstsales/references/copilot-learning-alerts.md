@@ -4,6 +4,8 @@
 
 Copilot is the assistant inside FirstSales. It can answer questions about the account and do tasks in it.
 
+These `copilot ask` examples are for the user to run in their own terminal, not the agent: they create sessions/messages without a dry-run flow. Agents use the named commands for writes instead.
+
 ```bash
 firstsales copilot ask "Summarize this week's campaign performance" --org org_123 --workspace ws_123
 firstsales copilot ask "Which replies need a human?" --session sess_123 --org org_123 --workspace ws_123
@@ -13,7 +15,7 @@ firstsales copilot sessions-get --session sess_123 --org org_123 --workspace ws_
 
 - `copilot ask` prints only the reply text, so it is safe to pipe.
 - `--session` continues a conversation. `--no-wait` returns `sessionId` and `messageId` at once.
-- Copilot may ask to approve an action, like a send or a launch. Do not pass `--auto-approve` unless the user said yes to that exact action. The server still makes the final call.
+- Never pass `--auto-approve` as an agent. Ask the user to resolve Copilot approvals themselves.
 - Prefer a direct CLI command when one exists. It is faster and easier to check.
 
 ## Learning

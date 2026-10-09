@@ -13,7 +13,7 @@ const home = mkdtempSync(path.join(tmpdir(), 'fs-examples-'));
 // Dummy keys: the user sets the real ones in their own shell.
 const env = { ...process.env, HOME: home, FIRSTSALES_API_KEY: 'sk_test_dummy', FIRSTSALES_CAL_COM_API_KEY: 'cal_test_dummy' };
 // These talk to the user's own login or terminal, so --dry-run does not apply.
-const skip = /^firstsales (auth|copilot ask|completion|api|commands)\b/;
+const skip = /^firstsales (auth|copilot ask|completion|commands)\b/;
 
 const mdFiles = (dir) =>
   readdirSync(dir, { withFileTypes: true }).flatMap((d) =>
