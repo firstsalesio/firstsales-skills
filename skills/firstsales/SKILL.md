@@ -50,7 +50,7 @@ Skip the questions when the user already said, or said "just do it" for a read.
 ## Pick the tool
 
 - **CLI first.** A `firstsales` command exists for almost everything. The pages below list them.
-- **`firstsales api <METHOD> <path>`** for a v1 route with no command yet.
+- **`firstsales api GET <path>`** for a read-only v1 route with no command yet.
 - **The FirstSales MCP server**, if the agent has it connected, for quick reads. It cannot make changes.
 
 ## Working rules
@@ -127,7 +127,7 @@ Answer in plain words: what is sending, what is replying, what is stuck, and the
 
 - Most commands need both `--org` and `--workspace`. Billing needs only `--org`.
 - A 404 often means the right id in the wrong workspace. Check `whoami`.
-- `api` has no `--dry-run`. Show the body and get a yes before a write.
+- `api` has no `--dry-run`. Use it only for reads. If no named command supports a write with dry-run, stop and ask the user to perform it in the app.
 - Signals leads use `--signal-id`; other signal commands use `--signal`.
 - Times for `emails schedule --at` need a time zone, like `2026-11-01T10:00:00+05:30`.
 
