@@ -1,0 +1,10 @@
+{
+  "name": "firstsales",
+  "version": "0.1.0",
+  "description": "Run FirstSales outbound sales work from your agent: campaigns, contacts, inbox, Signals, senders and billing through the FirstSales CLI.",
+  "author": { "name": "FirstSales", "url": "https://firstsales.io" },
+  "homepage": "https://developer.firstsales.io",
+  "repository": "https://github.com/firstsalesio/firstsales-skills",
+  "license": "MIT",
+  "keywords": ["firstsales", "sales", "outbound", "email", "crm", "cli"]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "firstsales",
+  "description": "FirstSales agent skills for Claude Code.",
+  "owner": { "name": "FirstSales", "url": "https://firstsales.io" },
+  "plugins": [
+    {
+      "name": "firstsales",
+      "source": "./",
+      "description": "Run FirstSales outbound sales work from your agent: campaigns, contacts, inbox, Signals, senders and billing through the FirstSales CLI.",
+      "version": "0.1.0",
+      "category": "productivity"
+    }
+  ]
+}

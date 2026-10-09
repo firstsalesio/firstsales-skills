@@ -1,0 +1,13 @@
+{
+  "$schema": "https://context7.com/schema/context7.json",
+  "projectTitle": "FirstSales Agent Skills",
+  "description": "Agent skills for FirstSales, an outbound sales platform. They drive the FirstSales CLI (@firstsales.io/cli) to manage campaigns, contacts, lists, companies, the reply inbox, Signals leads, senders, domains, deals, billing and API keys.",
+  "folders": ["skills"],
+  "excludeFolders": ["tests", "scripts", ".github", ".claude-plugin"],
+  "rules": [
+    "Run skills/firstsales/scripts/ensure-cli.sh before using the CLI, and install updates only after the user agrees.",
+    "Show the --dry-run output of every write and run it only after the user confirms.",
+    "Never put the API key on a command line or in output; the user stores it with firstsales auth login or FIRSTSALES_API_KEY.",
+    "Pass --org and --workspace, or rely on FIRSTSALES_ORG_ID and FIRSTSALES_WORKSPACE_ID."
+  ]
+}
