@@ -6,3 +6,4 @@
 - Covers every command in `@firstsales.io/cli` 0.1.12, one reference page per area, plus playbooks and troubleshooting.
 - Checks npm for a newer CLI on every run and installs only after the user agrees.
 - Installs through the Claude Code plugin marketplace, `npx skills add`, or `install.sh`.
+- GUIDE.md: settings order, how the skill works, recipes and errors.

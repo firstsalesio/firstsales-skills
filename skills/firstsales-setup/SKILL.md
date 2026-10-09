@@ -30,12 +30,15 @@ firstsales auth status --json
 
 If it shows a key (masked), go to step 3.
 
+`firstsales doctor` lists what is missing, if anything. Share its output with the user, never the config file.
+
 ## Step 2: the user stores their key
 
 Do not ask for the key, and do not type it, print it or pass it on a command line. Tell the user to do one of these in their own terminal:
 
-1. Make a key in the FirstSales app under **Settings → API → API Keys**. Give it only the scopes they need.
-2. Then either:
+1. No account yet? Sign up at https://app.firstsales.io first.
+2. Make a key in the FirstSales app under **Settings → API → API Keys**. Give it only the scopes they need.
+3. Then either:
    - save it to the CLI profile, typed hidden:
 
      ```bash
@@ -64,13 +67,21 @@ export FIRSTSALES_ORG_ID=org_123
 export FIRSTSALES_WORKSPACE_ID=ws_123
 ```
 
+Check the key works in that workspace:
+
+```bash
+firstsales campaigns list --org org_123 --workspace ws_123 --json
+```
+
+An empty list is fine. Exit code 3 or 403 means the key is wrong or lacks a scope: go back to step 2.
+
 ## Step 4: hand over
 
 Tell the user setup is done and which organization and workspace are active. Go back to the `firstsales` skill for the real task.
 
 ## Switching accounts
 
-Use a named profile per account. The user runs, in their own terminal:
+Use one named profile per account or workspace. The user runs, in their own terminal:
 
 ```bash
 read -rs FS_KEY && firstsales auth login --profile client-b --api-key "$FS_KEY"; unset FS_KEY

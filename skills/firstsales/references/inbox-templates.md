@@ -12,6 +12,7 @@ firstsales inbox assign --thread thread_123 --data '{"assigneeId":"user_123"}' -
 ```
 
 - `threads` filters: `--tab`, `--sender-connector-id`, `--campaign-id`, `--category`, `--from`, `--to`, `--sort`, `--page`, `--limit`.
+- `--tab` values: `all` (default), `needs-approval`, `unread`, `needs-reply`, `replies`, `completed`, `active`, `bounced`, `failed`, `warmup`, `snoozed`.
 - `bulk-read` takes 1 to 200 `threadIds` per call.
 - `snooze` needs a future `until` with a timezone, at most a year out. `{"until":null}` unsnoozes.
 - `assign` takes `assigneeId` (a member id from `firstsales members list`). `{"assigneeId":null}` unassigns.

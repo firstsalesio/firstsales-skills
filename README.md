@@ -10,7 +10,7 @@ Ask your coding agent how a campaign is doing, clean a contact list, work the re
 [![npm CLI](https://img.shields.io/npm/v/@firstsales.io/cli?label=%40firstsales.io%2Fcli)](https://www.npmjs.com/package/@firstsales.io/cli)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-[Install](#install) · [Quick start](#quick-start) · [What it can do](#what-it-can-do) · [Safety](#safety) · [Docs](https://developer.firstsales.io)
+[Install](#install) · [Quick start](#quick-start) · [What it can do](#what-it-can-do) · [Safety](#safety) · [Guide](GUIDE.md) · [Docs](https://developer.firstsales.io)
 
 </div>
 
