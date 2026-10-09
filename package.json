@@ -1,0 +1,10 @@
+{
+  "name": "firstsales-skills",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Agent skills for FirstSales: Claude Code, Codex, OpenCode, Cursor and Gemini CLI.",
+  "license": "MIT",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": { "test": "node --test tests/*.test.mjs" }
+}
