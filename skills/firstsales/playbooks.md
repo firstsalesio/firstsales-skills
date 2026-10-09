@@ -18,7 +18,7 @@ Report in plain words: what is sending, what is replying, what is stuck.
 3. `firstsales campaigns create --data '{"name":"Q4 founders","campaignType":"outreach","goal":"meeting"}'` **(confirm)**.
    - `campaignType`: `outreach` or `marketing`.
    - `goal`: `meeting`, `demo`, `download`, `order`, `reply` or `custom`.
-4. Point it at the list and a sender: `campaigns workflow-update` with `includeListIds` and `senderConnectorIds` **(confirm)**.
+4. Point it at the list and a sender: `campaigns workflow update <campaign> --include-list <list> --sender <connector>` (one PATCH with only those ids; never `workflow-update`, which replaces the whole workflow) **(confirm)**.
 5. Check the sender is healthy: `connectors test` and `warmup status` (senders-domains-deliverability.md).
 6. Send a test email to a workspace member, then launch with the three-step flow in campaigns.md **(confirm)**.
 

@@ -13,7 +13,6 @@ Check campaigns, clean contact lists, work the reply inbox and pull fresh leads 
 [![Gemini CLI](https://img.shields.io/badge/Gemini_CLI-Skill-4285F4?logo=googlegemini&logoColor=white)](https://github.com/google-gemini/gemini-cli)
 
 [![npm CLI](https://img.shields.io/npm/v/@firstsales.io/cli?label=%40firstsales.io%2Fcli&logo=npm)](https://www.npmjs.com/package/@firstsales.io/cli)
-[![Tests](https://img.shields.io/github/actions/workflow/status/firstsalesio/firstsales-skills/test.yml?branch=main&label=tests&logo=githubactions&logoColor=white)](https://github.com/firstsalesio/firstsales-skills/actions/workflows/test.yml)
 [![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)](CHANGELOG.md)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
