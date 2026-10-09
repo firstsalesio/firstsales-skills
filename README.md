@@ -59,7 +59,7 @@ Check campaigns, clean contact lists, work the reply inbox and pull fresh leads 
 
 These skills let your coding agent do it for you, safely:
 
-1. **It knows every command.** All 174 commands of the [FirstSales CLI](https://www.npmjs.com/package/@firstsales.io/cli) are documented, and a test fails the build if the CLI adds one the skill does not cover.
+1. **It knows every command.** All 174 commands of the [FirstSales CLI](https://www.npmjs.com/package/@firstsales.io/cli) are documented, and `npm test` fails if the CLI adds one the skill does not cover.
 2. **It asks before it guesses.** Which workspace? Which campaign? Which sender? It asks once, offering real names it looked up.
 3. **It never surprises you.** Reads run straight away. Anything that sends, spends credits or deletes is shown as a `--dry-run` first.
 4. **It never touches your key.** You store the API key yourself, typed hidden, in your own terminal.
@@ -280,6 +280,8 @@ More in [troubleshooting.md](skills/firstsales/references/troubleshooting.md).
 ---
 
 ## Contributing
+
+No CI runs on this repo, so run the tests yourself before you open a pull request, and maintainers run them on every outside pull request before merging:
 
 ```bash
 npm test
